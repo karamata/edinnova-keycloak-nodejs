@@ -306,6 +306,7 @@ Keycloak.prototype.getGrantFromCode = function (code, request, response) {
 };
 
 Keycloak.prototype.loginUrl = function (uuid, redirectUrl) {
+  redirectUrl = redirectUrl && redirectUrl.replace('http://', 'https://');
   return this.config.realmUrl +
   '/protocol/openid-connect/auth' +
   '?client_id=' + encodeURIComponent(this.config.clientId) +
@@ -316,6 +317,7 @@ Keycloak.prototype.loginUrl = function (uuid, redirectUrl) {
 };
 
 Keycloak.prototype.logoutUrl = function (redirectUrl) {
+  redirectUrl = redirectUrl && redirectUrl.replace('http://', 'https://');
   return this.config.realmUrl +
   '/protocol/openid-connect/logout' +
   '?redirect_uri=' + encodeURIComponent(redirectUrl);

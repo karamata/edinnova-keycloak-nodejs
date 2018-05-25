@@ -31,6 +31,7 @@ module.exports = function (keycloak, logoutUrl) {
     let headerHost = request.headers.host.split(':');
     let port = headerHost[1] || '';
     let redirectUrl = request.protocol + '://' + host + (port === '' ? '' : ':' + port) + '/';
+    redirectUrl = redirectUrl && redirectUrl.replace('http://', 'https://');
     let keycloakLogoutUrl = keycloak.logoutUrl(redirectUrl);
 
     response.redirect(keycloakLogoutUrl);

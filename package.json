@@ -1,6 +1,6 @@
 {
-  "name": "keycloak-connect",
-  "version": "4.0.0-final",
+  "name": "edinnova-keycloak-nodejs",
+  "version": "0.0.1",
   "description": "Keycloak Connect Middleware",
   "homepage": "http://keycloak.org",
   "main": "index.js",
