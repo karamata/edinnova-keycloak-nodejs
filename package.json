@@ -1,8 +1,8 @@
 {
-  "name": "edinnova-keycloak-nodejs",
+  "name": "edinnova-keycloak-js",
   "version": "0.0.1",
-  "description": "Keycloak Connect Middleware",
-  "homepage": "http://keycloak.org",
+  "description": "Edinnova Keycloak Connect Middleware",
+  "homepage": "https://edinnova.com",
   "main": "index.js",
   "scripts": {
     "lint": "jshint *.js stores/*.js middleware/*.js middleware/auth-utils/*.js example/*.js",
@@ -19,17 +19,9 @@
     "oauth2.0",
     "authentication"
   ],
-  "files": [
-    "example",
-    "middleware",
-    "stores",
-    "test",
-    "index.js",
-    "uuid.js"
-  ],
   "author": {
-    "name": "Red Hat, Inc.",
-    "url": "http://keycloak.org"
+    "name": "Edinnova Team's",
+    "url": "https://edinnova.com"
   },
   "license": "Apache-2.0",
   "dependencies": {
@@ -69,7 +61,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/keycloak/keycloak-nodejs-connect.git"
+    "url": "https://github.com/karamata/edinnova-keycloak-nodejs"
   },
-  "bugs": "https://github.com/keycloak/keycloak-nodejs-connect/issues"
+  "bugs": "https://github.com/karamata/edinnova-keycloak-nodejs/issues"
 }
